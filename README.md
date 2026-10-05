@@ -470,6 +470,10 @@ This is an academic project for IT2810 at NTNU. Contributions are limited to tea
 ## 👥 Team
 
 IT2810 - Group 12
+- [@iveroh](https://www.github.com/iveroh)
+- [@Dasar0410](https://www.github.com/Dasar0410)
+- [@mnemarius](https://www.github.com/mnemarius)
+- [@Andrej-52](https://www.github.com/Andrej-52)
 
 ---
 **Made with ☕ and 🍺 by IT2810 Group 12**
