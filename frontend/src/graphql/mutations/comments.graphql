@@ -1,0 +1,22 @@
+mutation CreateComment($commentData: CreateCommentInput!) {
+    createComment(commentData: $commentData) {
+        description
+        commented_by_id
+        post_id
+    }
+}
+
+mutation UpdateComment($commentData: UpdateCommentInput!) {
+    updateComment(commentData: $commentData) {
+        description
+        id
+    }
+}
+
+mutation DeleteComment($id: ID!) {
+  deleteComment(id: $id) {
+    description
+    commented_by_id
+    post_id
+  }
+}

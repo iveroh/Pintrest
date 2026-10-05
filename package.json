@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start-project": "npm run install-root && cd frontend && npm run dev && cd ../backend && npm run dev",
+    "install-root": "npm run install-frontend && npm run install-backend",
+    "install-frontend": "cd frontend && npm install",
+    "install-backend": "cd backend && npm install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}

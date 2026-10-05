@@ -1,0 +1,52 @@
+query GetPintPosts($orderBy: PintPostSortOrder, $cursor: String, $take: Int, $search: String, $creatorIds: [String!]) {
+  getPintPosts(orderBy: $orderBy, cursor: $cursor, take: $take, search: $search, creatorIds: $creatorIds) {
+    posts {
+      creator_id
+      created_at
+      description
+      id
+      title
+      image_url
+      likes
+    }
+    nextCursor
+  }
+}
+
+
+query Query($getPintPostId: ID!) {
+        getPintPost(id: $getPintPostId) {
+            created_at
+            creator_id
+            description
+            id
+            title
+            image_url
+            image_public_id
+        }
+    }
+
+query GetPintPostsForUser($getPintPostsForUserId: ID!) {
+    getPintPostsForUser(user_id: $getPintPostsForUserId) {
+            creator_id
+            created_at
+            description
+            id
+            title
+            image_url
+            likes
+        }
+    }
+query GetPintPost($id: ID!) {
+  getPintPost(id: $id) {
+    created_at
+    creator_id
+    description
+    id
+    title
+    image_url
+    pints_consumed
+    likes
+    image_public_id
+  }
+}

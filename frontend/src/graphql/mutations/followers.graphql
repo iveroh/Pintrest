@@ -1,0 +1,13 @@
+mutation CreateFollower($followerData: FollowerInput!) {
+    createFollower(followerData: $followerData) {
+        user_id
+        following_id
+    }
+}
+
+mutation DeleteFollower($followerData: FollowerInput!) {
+    deleteFollower(followerData: $followerData) {
+        user_id
+        following_id
+    }
+}

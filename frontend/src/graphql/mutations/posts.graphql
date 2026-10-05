@@ -1,0 +1,26 @@
+mutation CreatePintPost($postData: CreatePintPostInput!) {
+    createPintPost(postData: $postData) {
+      title
+      description
+      creator_id
+      pints_consumed
+      image_url
+      image_public_id
+    }
+  }
+
+mutation DeletePintPost($id: ID!) {
+  deletePintPost(id: $id) {
+    id
+    success
+  }
+}
+
+mutation UpdatePintPost($id: ID!, $postData: UpdatePintPostInput!) {
+  updatePintPost(id: $id, postData: $postData) {
+    id
+    title
+    description
+    pints_consumed
+  }
+}

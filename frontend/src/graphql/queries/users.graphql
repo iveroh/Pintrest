@@ -1,0 +1,46 @@
+query GetUser($getUserId: ID!) {
+        getUser(id: $getUserId) {
+            avatar_path
+            avatar_public_id
+            banner_path
+            banner_public_id
+            bio
+            created_at
+            display_name
+            id
+            username
+            email
+            password_hash
+        }
+    }
+
+query Me {
+  me {
+    id
+    username
+    email
+    display_name
+    bio
+    avatar_path
+    avatar_public_id
+    banner_path
+    banner_public_id
+    created_at
+  }
+}
+
+query GetUserDisplayName($getUserId: ID!) {
+  getUser(id: $getUserId) {
+    display_name
+  }
+}
+
+query GetUserStats($userId: ID!) {
+  getUserStats(userId: $userId) {
+    user_id
+    follower_count
+    post_count
+    like_count
+    pints_consumed_count
+  }
+}

@@ -1,0 +1,13 @@
+mutation CreateLike($likeData: CreateLikeInput!) {
+    createLike(likeData: $likeData) {
+      liked_by_id
+      post_id
+    }
+  }
+
+mutation DeleteLike($liked_by_id: ID!, $post_id: ID!) {
+    deleteLike(liked_by_id: $liked_by_id, post_id: $post_id) {
+        liked_by_id
+        post_id
+    }
+}

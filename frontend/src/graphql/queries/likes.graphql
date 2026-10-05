@@ -1,0 +1,13 @@
+query GetLikes {
+  getLikes {
+    liked_by_id
+    post_id
+  }
+}
+
+query GetLike($likedById: ID!, $postId: ID!) {
+  getLike(liked_by_id: $likedById, post_id: $postId) {
+    liked_by_id,
+    post_id
+  }
+}

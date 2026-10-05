@@ -1,0 +1,9 @@
+query GetComments($postId: ID) {
+  getComments(post_id: $postId) {
+    id
+    description
+    created_at
+    commented_by_id
+    post_id
+  }
+}

@@ -1,0 +1,12 @@
+mutation DeleteImage($publicId: String!) {
+  deleteImage(public_id: $publicId) {
+    success
+  }
+}
+
+mutation UploadImage($file: String!) {
+  uploadImage(file: $file) {
+    url
+    public_id
+  }
+}

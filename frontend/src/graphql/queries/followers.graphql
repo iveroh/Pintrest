@@ -1,0 +1,5 @@
+query GetFollowedUsers($user_id: ID!) {
+  getFollowedUsers(user_id: $user_id) {
+    following_id
+  }
+}
